@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PROYECTO 0</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#000;
+    color:#fff;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+
+    background:
+    linear-gradient(180deg, rgba(0,0,0,.3), rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* CAJA */
+.content{
+    max-width:720px;
+    padding:40px;
+    background:rgba(0,0,0,.55);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+}
+
+/* TAG */
+.tag{
+    font-size:11px;
+    letter-spacing:6px;
+    color:#aaa;
+    margin-bottom:18px;
+    text-transform:uppercase;
+}
+
+/* 🔥 TITULO MEJORADO */
+.title{
+    font-family:'Oswald', sans-serif;
+    font-size:clamp(65px,9vw,115px);
+    letter-spacing:14px;
+    text-transform:uppercase;
+    line-height:0.95;
+    text-align:center;
+
+    color:#ffffff;
+
+    text-shadow:
+    0 10px 30px rgba(0,0,0,.85),
+    0 0 1px rgba(255,255,255,.15);
+}
+
+/* 🔥 0 PROTAGONISTA */
+.zero{
+    font-size:1.1em;
+    color:#0b0b0b;
+
+    text-shadow:
+    0 0 1px rgba(255,255,255,.2),
+    0 0 25px rgba(255,40,40,.35);
+
+    display:inline-block;
+    transform: translateY(5px);
+    font-weight:700;
+}
+
+/* LINEA */
+.line{
+    width:80px;
+    height:1px;
+    background:#fff;
+    margin:20px auto;
+    opacity:.25;
+}
+
+/* SUB */
+.sub{
+    font-size:15px;
+    color:#bbb;
+    margin-bottom:28px;
+    line-height:1.5;
+}
+
+/* BOTONES */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.buttons a{
+    text-decoration:none;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.15);
+    font-size:13px;
+    background:rgba(255,255,255,.03);
+    transition:.25s;
+}
+
+.buttons a:hover{
+    background:rgba(255,0,0,.15);
+    transform:translateY(-3px);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.content{
+    padding:25px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons a{
+    width:100%;
+    max-width:280px;
+    margin:auto;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="content">
+
+<div class="tag">POOL PARTY • NIGHT EXPERIENCE</div>
+
+<h1 class="title">PROYECTO <span class="zero">0</span></h1>
+
+<div class="line"></div>
+
+<p class="sub">
+Experiencia nocturna premium con música, luces, piscina y bebidas exclusivas.
+</p>
+
+<div class="buttons">
+
+<a href="entradas.html">Entradas</a>
+<a href="bebidas.html">Bebidas</a>
+<a href="galeria.html">Galería</a>
+<a href="https://wa.me/573001234567">Contacto</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
